@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Management System</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Employees</h2>
+    <table>
+        <tr>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Hire Date</th>
+            <th>Gender</th>
+            <th>Marital Status</th>
+            <th>Emergency Contact Name</th>
+            <th>Emergency Contact Phone</th>
+            <th>Department ID</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>1990-05-15</td>
+            <td>john.doe@example.com</td>
+            <td>123-456-7890</td>
+            <td>123 Main St, City, State</td>
+            <td>2020-01-10</td>
+            <td>Male</td>
+            <td>Single</td>
+            <td>Mary Doe</td>
+            <td>987-654-3210</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane</td>
+            <td>Smith</td>
+            <td>1985-10-20</td>
+            <td>jane.smith@example.com</td>
+            <td>987-654-3210</td>
+            <td>456 Oak St, City, State</td>
+            <td>2018-07-05</td>
+            <td>Female</td>
+            <td>Married</td>
+            <td>Jack Smith</td>
+            <td>123-456-7890</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <h2>Departments</h2>
+    <table>
+        <tr>
+            <th>Department ID</th>
+            <th>Department Name</th>
+            <th>Location</th>
+            <th>Manager ID</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sales</td>
+            <td>Building A, Floor 3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Marketing</td>
+            <td>Building B, Floor 2</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <h2>Attendance</h2>
+    <table>
+        <tr>
+            <th>Attendance ID</th>
+            <th>Employee ID</th>
+            <th>Date</th>
+            <th>Attendance Status</th>
+            <th>Leave Type</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>2024-05-01</td>
+            <td>Present</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2024-05-01</td>
+            <td>Present</td>
+            <td>N/A</td>
+        </tr>
+    </table>
+
+    <h2>Salary</h2>
+    <table>
+        <tr>
+            <th>Salary ID</th>
+            <th>Employee ID</th>
+            <th>Basic Salary</th>
+            <th>Allowances</th>
+            <th>Deductions</th>
+            <th>Tax Rate</th>
+            <th>Net Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>3000.00</td>
+            <td>200.00</td>
+            <td>100.00</td>
+            <td>0.20</td>
+            <td>2400.00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>3500.00</td>
+            <td>150.00</td>
+            <td>80.00</td>
+            <td>0.18</td>
+            <td>2960.00</td>
+        </tr>
+    </table>
+
+    <h2>Benefits</h2>
+    <table>
+        <tr>
+            <th>Benefit ID</th>
+            <th>Employee ID</th>
+            <th>Benefit Type</th>
+            <th>Provider</th>
+            <th>Coverage Details</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>Health Insurance</td>
+            <td>ABC Insurance</td>
+            <td>Coverage Amount: $500/month</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1</td>
+            <td>Retirement Plan</td>
+            <td>XYZ Investments</td>
+            <td>Contribution Percentage: 5%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2</td>
+            <td>Health Insurance</td>
+            <td>DEF Insurance</td>
+            <td>Coverage Amount: $600/month</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2</td>
+            <td>Retirement Plan</td>
+            <td>PQR Investments</td>
+            <td>Contribution Percentage: 7%</td>
+        </tr>
+    </table>
+
+    <h2>Skills</h2>
+    <table>
+        <tr>
+            <th>Skill ID</th>
+            <th>Skill Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sales</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Marketing</td>
+        </tr>
+    </table>
+
+    <h2>Certifications</h2>
+    <table>
+        <tr>
+            <th>Certification ID</th>
+            <th>Skill ID</th>
+            <th>Certification Name</th>
+            <th>Certification Date</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>Sales Certification</td>
+            <td>2021-03-15</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>Marketing Strategy Certification</td>
+            <td>2019-06-20</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2</td>
+            <td>Social Media Marketing Course</td>
+            <td>2018-09-10</td>
+        </tr>
+    </table>
+</body>
+</html>
